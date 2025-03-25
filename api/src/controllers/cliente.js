@@ -9,8 +9,8 @@ const create = async (req, res) => {
 }
 
 const read = async (req, res) => {
-    const clientes = await prisma.cliente.findMany();
-    res.json(clientes);
+    const cliente = await prisma.cliente.findMany();
+    res.json(cliente);
 }
 
 const update = async (req, res) => {
